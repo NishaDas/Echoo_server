@@ -8,7 +8,8 @@ public static void main(String args[])throws Exception
     		Socket s=ss.accept();  
     		DataInputStream din=new DataInputStream(s.getInputStream());  
     		DataOutputStream dout=new DataOutputStream(s.getOutputStream());  
-    		BufferedReader br=new BufferedReader(new InputStreamReader(System.in)); 
+    		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    		String str="",str1="";   
 		while(!str.equalsIgnoreCase("stop"))
     		{  
 			str=din.readUTF();  

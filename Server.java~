@@ -17,3 +17,8 @@ public static void main(String args[])throws Exception
 			dout.writeUTF(str1); 
 			dout.flush();  
 		} 
+		din.close();  
+		s.close();  
+		ss.close();  
+	}
+}
